@@ -2,6 +2,7 @@ package com.Model;
 
 public class Driver {
 
+	private String driverId;
 	private String name;
     private String gender;
     private int age;
@@ -12,9 +13,10 @@ public class Driver {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Driver(String name, String gender, int age, String vehicleDetails, Location currentLocation,
+	public Driver(String driverId,String name, String gender, int age, String vehicleDetails, Location currentLocation,
 			boolean available) {
 		super();
+		this.driverId = driverId;
 		this.name = name;
 		this.gender = gender;
 		this.age = age;
@@ -58,6 +60,12 @@ public class Driver {
 	}
 	public void setAvailable(boolean available) {
 		this.available = available;
+	}
+	public String getDriverId() {
+		return driverId;
+	}
+	public void setDriverId(String driverId) {
+		this.driverId = driverId;
 	}
     
     
